@@ -132,7 +132,7 @@ const Dashboard = () => {
 
       {/* Create Modal */}
       {showCreateModal && (
-        <div className="absolute inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm px-4">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm px-4">
           <div className="bg-white dark:bg-[#1E1E1E] rounded-3xl p-6 w-full max-w-sm transition-colors border border-gray-200/50 dark:border-[#2C2C2C]">
             <h3 className="text-xl font-bold mb-4 text-gray-800 dark:text-gray-100">{editingListId ? 'Edit List' : 'Create New List'}</h3>
             <input 

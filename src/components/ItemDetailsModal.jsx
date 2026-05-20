@@ -22,7 +22,7 @@ const ItemDetailsModal = ({ item, listId, onClose }) => {
   };
 
   return (
-    <div className="absolute inset-0 z-50 flex items-center justify-center bg-[#212121]/50 backdrop-blur-sm p-4">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#212121]/50 backdrop-blur-sm p-4">
       <div className="bg-white rounded-[32px] w-full max-w-sm overflow-hidden animate-fade-in-up">
         {/* Header Area */}
         <div className="relative pt-12 pb-6 px-6 bg-[#E0F2F1] flex flex-col justify-end overflow-hidden">
