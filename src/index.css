@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand: #26A69A;
+  --color-brand-dark: #1e837a;
+  --color-surface-bg: #F0F0F0;
+  --color-surface-card: #FFFFFF;
+  --color-accent-status: #E0F2F1;
+  --color-text-primary: #212121;
+  --color-text-secondary: #757575;
+  --color-alert: #D32F2F;
+  --color-success: #26A69A;
+}
+
+@layer base {
+  body {
+    @apply bg-surface-bg text-text-primary font-sans antialiased;
+  }
+}
+
+/* Custom scrollbar for webkit */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+@layer utilities {
+  .animate-fade-in-up {
+    animation: fadeInUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
